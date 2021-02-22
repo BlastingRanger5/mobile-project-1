@@ -8,6 +8,7 @@ public class ButtonManager : MonoBehaviour
 
     public Image explosion;
     public AudioSource boom;
+    public Text connellyText;
 
     void Start()
     {
@@ -22,6 +23,15 @@ public class ButtonManager : MonoBehaviour
     public void WrongAnswer1()
     {
         Debug.Log("*boom*");
+        explosion.enabled = true;
+        boom.Play(0);
+        StartCoroutine(postButton());
+    }
+
+    public void WrongAnswer2()
+    {
+        Debug.Log("*boom*");
+        connellyText.enabled = true;
         explosion.enabled = true;
         boom.Play(0);
         StartCoroutine(postButton());
