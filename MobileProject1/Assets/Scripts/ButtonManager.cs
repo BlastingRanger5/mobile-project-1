@@ -70,6 +70,13 @@ public class ButtonManager : MonoBehaviour
         StartCoroutine(postButton3());
     }
 
+    public void WrongAnswer5()
+    {
+        Debug.Log("*boom*");
+        boom.Play(0);
+        StartCoroutine(postButton());
+    }
+
     IEnumerator postButton()
     {
         yield return new WaitForSeconds(2f);
