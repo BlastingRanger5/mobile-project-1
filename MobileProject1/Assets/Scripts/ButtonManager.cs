@@ -20,6 +20,17 @@ public class ButtonManager : MonoBehaviour
     public Text connellyText;
     public Text minecraft;
     public Text minecraftTwo;
+    public Text aStory;
+    public Text aStory2;
+    public Text aStory3;
+    public Text aStory4;
+    public Text aStory5;
+    public Text aStory6;
+    public Text aStory7;
+    public Text aStory8;
+    public Text aStory9;
+    public Button answer1;
+    public Button answer2;
 
     void Start()
     {
@@ -77,6 +88,18 @@ public class ButtonManager : MonoBehaviour
         StartCoroutine(postButton());
     }
 
+    public void WrongAnswer6()
+    {
+        Debug.Log("*boom*");
+        connellyText.enabled = false;
+        minecraft.enabled = false;
+        lightningBolt.enabled = false;
+        answer1.enabled = false;
+        answer2.enabled = false;
+        boom.Play(0);
+        StartCoroutine(postButton4());
+    }
+
     IEnumerator postButton()
     {
         yield return new WaitForSeconds(2f);
@@ -102,6 +125,41 @@ public class ButtonManager : MonoBehaviour
         explosion.enabled = true;
         boom.Play(0);
         yield return new WaitForSeconds(2f);
+        Debug.Log("bye");
+        Application.Quit();
+    }
+
+    IEnumerator postButton4()
+    {
+        yield return new WaitForSeconds(6f);
+        aStory.enabled = true;
+        yield return new WaitForSeconds(6f);
+        aStory.enabled = false;
+        aStory2.enabled = true;
+        yield return new WaitForSeconds(6f);
+        aStory2.enabled = false;
+        aStory3.enabled = true;
+        yield return new WaitForSeconds(6f);
+        aStory3.enabled = false;
+        aStory4.enabled = true;
+        yield return new WaitForSeconds(6f);
+        aStory4.enabled = false;
+        aStory5.enabled = true;
+        yield return new WaitForSeconds(6f);
+        aStory5.enabled = false;
+        aStory6.enabled = true;
+        yield return new WaitForSeconds(6f);
+        aStory6.enabled = false;
+        aStory7.enabled = true;
+        yield return new WaitForSeconds(6f);
+        aStory7.enabled = false;
+        aStory8.enabled = true;
+        yield return new WaitForSeconds(6f);
+        aStory8.enabled = false;
+        aStory9.enabled = true;
+        yield return new WaitForSeconds(6f);
+        aStory9.text = "Music by Winchester Cathedral Choir";
+        yield return new WaitForSeconds(5f);
         Debug.Log("bye");
         Application.Quit();
     }
