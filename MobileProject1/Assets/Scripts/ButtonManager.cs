@@ -47,6 +47,8 @@ public class ButtonManager : MonoBehaviour
         Debug.Log("*boom*");
         explosion.enabled = true;
         boom.Play(0);
+        answer1.enabled = false;
+        answer2.enabled = false;
         StartCoroutine(postButton());
     }
 
@@ -56,6 +58,8 @@ public class ButtonManager : MonoBehaviour
         connellyText.enabled = true;
         explosion.enabled = true;
         boom.Play(0);
+        answer1.enabled = false;
+        answer2.enabled = false;
         StartCoroutine(postButton());
     }
 
@@ -63,6 +67,8 @@ public class ButtonManager : MonoBehaviour
     {
         Debug.Log("*boom*");
         rb.simulated = true;
+        answer1.enabled = false;
+        answer2.enabled = false;
         StartCoroutine(postButton2());
     }
 
@@ -78,6 +84,8 @@ public class ButtonManager : MonoBehaviour
         zeusHair6.enabled = true;
         zeusHair7.enabled = true;
         lightningBolt.enabled = true;
+        answer1.enabled = false;
+        answer2.enabled = false;
         StartCoroutine(postButton3());
     }
 
@@ -85,6 +93,8 @@ public class ButtonManager : MonoBehaviour
     {
         Debug.Log("*boom*");
         boom.Play(0);
+        answer1.enabled = false;
+        answer2.enabled = false;
         StartCoroutine(postButton());
     }
 
@@ -159,7 +169,7 @@ public class ButtonManager : MonoBehaviour
         aStory9.enabled = true;
         yield return new WaitForSeconds(6f);
         aStory9.text = "Music by Winchester Cathedral Choir";
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         Debug.Log("bye");
         Application.Quit();
     }

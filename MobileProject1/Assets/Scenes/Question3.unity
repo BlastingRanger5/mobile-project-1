@@ -580,11 +580,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 0}
+  zeusHair: {fileID: 0}
+  zeusHair2: {fileID: 0}
+  zeusHair3: {fileID: 0}
+  zeusHair4: {fileID: 0}
+  zeusHair5: {fileID: 0}
+  zeusHair6: {fileID: 0}
+  zeusHair7: {fileID: 0}
+  lightningBolt: {fileID: 0}
   rb: {fileID: 0}
   boom: {fileID: 0}
   connellyText: {fileID: 0}
   minecraft: {fileID: 0}
   minecraftTwo: {fileID: 0}
+  aStory: {fileID: 0}
+  aStory2: {fileID: 0}
+  aStory3: {fileID: 0}
+  aStory4: {fileID: 0}
+  aStory5: {fileID: 0}
+  aStory6: {fileID: 0}
+  aStory7: {fileID: 0}
+  aStory8: {fileID: 0}
+  aStory9: {fileID: 0}
+  answer1: {fileID: 0}
+  answer2: {fileID: 0}
 --- !u!114 &1004623750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -938,11 +957,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 0}
+  zeusHair: {fileID: 0}
+  zeusHair2: {fileID: 0}
+  zeusHair3: {fileID: 0}
+  zeusHair4: {fileID: 0}
+  zeusHair5: {fileID: 0}
+  zeusHair6: {fileID: 0}
+  zeusHair7: {fileID: 0}
+  lightningBolt: {fileID: 0}
   rb: {fileID: 757177531}
   boom: {fileID: 1604318394}
   connellyText: {fileID: 0}
   minecraft: {fileID: 928482432}
   minecraftTwo: {fileID: 865096589}
+  aStory: {fileID: 0}
+  aStory2: {fileID: 0}
+  aStory3: {fileID: 0}
+  aStory4: {fileID: 0}
+  aStory5: {fileID: 0}
+  aStory6: {fileID: 0}
+  aStory7: {fileID: 0}
+  aStory8: {fileID: 0}
+  aStory9: {fileID: 0}
+  answer1: {fileID: 1687366742}
+  answer2: {fileID: 1004623750}
 --- !u!114 &1687366742
 MonoBehaviour:
   m_ObjectHideFlags: 0
