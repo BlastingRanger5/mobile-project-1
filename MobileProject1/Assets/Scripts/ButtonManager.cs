@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
+
+    public Image explosion;
+    public AudioSource boom;
+
     void Start()
     {
         
@@ -15,8 +19,19 @@ public class ButtonManager : MonoBehaviour
         Debug.Log("YESSIREE");
     }
 
-    public void WrongAnswer()
+    public void WrongAnswer1()
     {
         Debug.Log("*boom*");
+        explosion.enabled = true;
+        boom.Play(0);
+        StartCoroutine(postButton());
     }
+
+    IEnumerator postButton()
+    {
+        yield return new WaitForSeconds(2f);
+        Debug.Log("bye");
+        Application.Quit();
+    }
+
 }
