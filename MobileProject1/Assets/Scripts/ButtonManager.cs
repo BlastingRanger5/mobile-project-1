@@ -58,9 +58,10 @@ public class ButtonManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         boom.Play(0);
+        yield return new WaitForSeconds(1f);
         minecraft.enabled = true;
         minecraftTwo.enabled = true;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         Debug.Log("bye");
         Application.Quit();
     }
