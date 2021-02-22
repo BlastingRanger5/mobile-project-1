@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
@@ -40,6 +41,7 @@ public class ButtonManager : MonoBehaviour
     public void RightAnswer()
     {
         Debug.Log("YESSIREE");
+        SceneManager.LoadScene(Random.Range(0, 6));
     }
 
     public void WrongAnswer1()
