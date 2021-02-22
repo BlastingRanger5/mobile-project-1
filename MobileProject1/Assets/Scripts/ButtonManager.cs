@@ -7,6 +7,14 @@ public class ButtonManager : MonoBehaviour
 {
 
     public Image explosion;
+    public Image zeusHair;
+    public Image zeusHair2;
+    public Image zeusHair3;
+    public Image zeusHair4;
+    public Image zeusHair5;
+    public Image zeusHair6;
+    public Image zeusHair7;
+    public Image lightningBolt;
     public Rigidbody2D rb;
     public AudioSource boom;
     public Text connellyText;
@@ -47,6 +55,21 @@ public class ButtonManager : MonoBehaviour
         StartCoroutine(postButton2());
     }
 
+    public void WrongAnswer4()
+    {
+        Debug.Log("*boom*");
+        connellyText.enabled = true;
+        zeusHair.enabled = true;
+        zeusHair2.enabled = true;
+        zeusHair3.enabled = true;
+        zeusHair4.enabled = true;
+        zeusHair5.enabled = true;
+        zeusHair6.enabled = true;
+        zeusHair7.enabled = true;
+        lightningBolt.enabled = true;
+        StartCoroutine(postButton3());
+    }
+
     IEnumerator postButton()
     {
         yield return new WaitForSeconds(2f);
@@ -62,6 +85,16 @@ public class ButtonManager : MonoBehaviour
         minecraft.enabled = true;
         minecraftTwo.enabled = true;
         yield return new WaitForSeconds(1f);
+        Debug.Log("bye");
+        Application.Quit();
+    }
+
+    IEnumerator postButton3()
+    {
+        yield return new WaitForSeconds(2f);
+        explosion.enabled = true;
+        boom.Play(0);
+        yield return new WaitForSeconds(2f);
         Debug.Log("bye");
         Application.Quit();
     }
