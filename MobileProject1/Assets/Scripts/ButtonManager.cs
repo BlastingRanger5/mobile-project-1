@@ -30,8 +30,10 @@ public class ButtonManager : MonoBehaviour
     public Text aStory7;
     public Text aStory8;
     public Text aStory9;
+    public Text score;
     public Button answer1;
     public Button answer2;
+    public static float playerScore;
 
     void Start()
     {
@@ -41,7 +43,7 @@ public class ButtonManager : MonoBehaviour
     public void RightAnswer()
     {
         Debug.Log("YESSIREE");
-        SceneManager.LoadScene(Random.Range(0, 6));
+        StartCoroutine(postRightButton());
     }
 
     public void WrongAnswer1()
@@ -112,6 +114,15 @@ public class ButtonManager : MonoBehaviour
         StartCoroutine(postButton4());
     }
 
+    public void WrongAnswer7()
+    {
+        Debug.Log("*boom*");
+        answer1.enabled = false;
+        answer2.enabled = false;
+        boom.Play(0);
+        StartCoroutine(postButton5());
+    }
+
     IEnumerator postButton()
     {
         yield return new WaitForSeconds(2f);
@@ -174,6 +185,21 @@ public class ButtonManager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         Debug.Log("bye");
         Application.Quit();
+    }
+
+    IEnumerator postButton5()
+    {
+        yield return new WaitForSeconds(37f);
+        Debug.Log("bye");
+        Application.Quit();
+    }
+
+    IEnumerator postRightButton()
+    {
+        playerScore = playerScore + 100f;
+        score.text = "" + playerScore;
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(Random.Range(0, 11));
     }
 
 }

@@ -23,4 +23,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Question6.unity
     guid: 34ec1e946b8952649a59df112479af35
+  - enabled: 1
+    path: Assets/Scenes/Question7.unity
+    guid: d22d6c061ef07794c8b263fbd05a8708
+  - enabled: 1
+    path: Assets/Scenes/Question8.unity
+    guid: 7117b95138e945a4895269852958e44a
+  - enabled: 1
+    path: Assets/Scenes/Question9.unity
+    guid: e883680eaa2a940448b9198e4ac10d42
+  - enabled: 1
+    path: Assets/Scenes/Question10.unity
+    guid: dee92a62a5ba8eb4b85807ed8a23d7d9
+  - enabled: 1
+    path: Assets/Scenes/Question11.unity
+    guid: 466ebfa6fbe065e4ab6cc84af7e0b1a4
+  - enabled: 1
+    path: Assets/Scenes/Question12.unity
+    guid: c51bf76c9589247439b15ea0a7b84158
   m_configObjects: {}
