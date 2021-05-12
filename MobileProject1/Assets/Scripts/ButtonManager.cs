@@ -199,7 +199,7 @@ public class ButtonManager : MonoBehaviour
         playerScore = playerScore + 100f;
         score.text = "" + playerScore;
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(Random.Range(0, 11));
+        SceneManager.LoadScene(Random.Range(0, 12));
     }
 
 }
